@@ -1,0 +1,49 @@
+.wrapper {
+    padding: 0 50px;
+}
+
+header {
+    position: relative;
+    text-align: center;
+}
+
+header span {
+    position: absolute;
+    font-size: 2em;
+    font-weight: bold;
+    right: 0px;
+    top: 0px;
+}
+
+h1 {
+    margin: 10px auto;
+}
+
+main {
+    border-top: 1px dotted rgb(199, 0, 0);
+}
+
+main img {
+    width: 450px;
+}
+
+figure {
+    float: right;
+    text-align: center;
+}
+
+aside {
+    background-color: rgb(255, 233, 233);
+}
+
+footer {
+    text-align: right;
+}
+
+.red {
+    color: rgb(199, 0, 0);
+}
+
+.italic {
+    font-style: italic;
+}
