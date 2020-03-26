@@ -1,7 +1,45 @@
-.wrapper {
-    padding: 0 50px;
+html * {
+    box-sizing: border-box;
 }
 
+/* 
+*   Global styles
+*/
+
+p {
+    font-size: 18px;
+    margin: 0 auto;
+}
+
+h1,
+h2 {
+    margin: 10px auto;
+}
+
+/*
+*   Additional styles
+*/
+
+.red {
+    color: rgb(199, 0, 0);
+}
+
+.italic {
+    font-style: italic;
+}
+
+/* 
+*   Wrapper
+*/
+
+.wrapper {
+    position: relative;
+    padding: 0 13%;
+}
+
+/* 
+*   Main Header
+*/
 header {
     position: relative;
     text-align: center;
@@ -15,35 +53,113 @@ header span {
     top: 0px;
 }
 
-h1 {
-    margin: 10px auto;
+/*
+*   Figure block
+*/
+figure,
+aside {
+    position: absolute;
+    left: 50%;
 }
+
+figure {
+    text-align: center;
+    top: 160px;
+    margin: 0;
+    margin-left: -245px;
+}
+
+figure img {
+    width: 480px;
+    border-radius: 10px;
+}
+
+/*
+*   Main article block
+*/
 
 main {
     border-top: 1px dotted rgb(199, 0, 0);
 }
 
-main img {
-    width: 450px;
+main header {
+    margin-bottom: 20px;
 }
 
-figure {
-    float: right;
-    text-align: center;
+main::after,
+.clearfix:after {
+    content: "";
+    display: table;
+    clear: both;
 }
+
+/*
+*   Initial layout based on floats
+*/
+
+.left-top,
+.right-top,
+.right-bottom,
+.left-bottom {
+    width: 49%;
+}
+
+section {
+    float: left;
+}
+
+.left-top,
+.left-bottom {
+    float: left;
+}
+
+.right-top,
+.right-bottom {
+    float: right;
+}
+
+.left-top:before,
+.left-bottom::before {
+    float: right;
+}
+.right-top:before,
+.right-bottom::before {
+    float: left;
+}
+
+.left-top:before,
+.right-top:before {
+    content: "";
+    width: 240px;
+    height: 440px;
+}
+
+.left-bottom:before,
+.right-bottom:before {
+    content: "";
+    width: 270px;
+    height: 520px;
+}
+
+/*
+*   Aside
+*/
 
 aside {
+    top: 51%;
     background-color: rgb(255, 233, 233);
+    margin-top: -10px;
+    margin-left: -272px;
+    width: 540px;
 }
+
+/* 
+*   Footer
+*/
 
 footer {
-    text-align: right;
-}
-
-.red {
-    color: rgb(199, 0, 0);
-}
-
-.italic {
-    font-style: italic;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    height: 50px;
 }
