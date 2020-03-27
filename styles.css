@@ -2,12 +2,16 @@ html * {
     box-sizing: border-box;
 }
 
+body {
+    font-family: "Noto Serif", serif;
+}
+
 /* 
 *   Global styles
 */
 
 p {
-    font-size: 18px;
+    font-size: 16px;
     margin: 0 auto;
 }
 
@@ -64,9 +68,9 @@ aside {
 
 figure {
     text-align: center;
-    top: 160px;
+    top: 180px;
     margin: 0;
-    margin-left: -245px;
+    margin-left: -250px;
 }
 
 figure img {
@@ -138,7 +142,7 @@ section {
 .right-bottom:before {
     content: "";
     width: 270px;
-    height: 520px;
+    height: 600px;
 }
 
 /*
@@ -160,6 +164,13 @@ aside {
 footer {
     display: flex;
     align-items: center;
-    justify-content: flex-end;
     height: 50px;
+    transition: all 0.8s ease;
+}
+
+footer > span {
+    padding: 10px 0;
+    display: inline-block;
+    text-align: right;
+    width: 100%;
 }
