@@ -174,7 +174,7 @@ footer > span {
     display: inline-block;
     text-align: right;
     /* transition: all 5s ease-out; */
-    transition: all 1s ease-out;
+    transition: all 5s ease-out;
 }
 
 footer:hover span {
@@ -186,4 +186,33 @@ footer:hover span {
 
 footer:hover span::before {
     content: "\2190";
+}
+
+/*
+*   Responsive
+*/
+@media screen and (max-width: 1200px) {
+    main article {
+        display: flex;
+        flex-direction: column;
+    }
+    .left-top,
+    .right-top,
+    .right-bottom,
+    .left-bottom {
+        width: 100%;
+    }
+
+    .left-top:before,
+    .right-top:before,
+    .left-bottom:before,
+    .right-bottom:before {
+        content: none;
+    }
+    figure,
+    aside {
+        position: static;
+        margin: 0;
+        width: 100%;
+    }
 }
