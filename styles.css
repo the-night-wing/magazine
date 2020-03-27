@@ -20,6 +20,10 @@ h2 {
     margin: 10px auto;
 }
 
+h1 {
+    font-size: 2.2em;
+}
+
 /*
 *   Additional styles
 */
@@ -78,6 +82,18 @@ figure {
 figure img {
     width: 480px;
     border-radius: 10px;
+    transition: all 0.5s ease;
+    -webkit-transition: all 0.5s ease;
+    -moz-transition: all 0.5s ease;
+    -ms-transition: all 0.5s ease;
+    -o-transition: all 0.5s ease;
+}
+
+figure img:hover {
+    transition: all 0.5s ease;
+    -webkit-box-shadow: 0px 0px 15px 0px rgba(0, 0, 0, 0.75);
+    -moz-box-shadow: 0px 0px 15px 0px rgba(0, 0, 0, 0.75);
+    box-shadow: 0px 0px 15px 0px rgba(0, 0, 0, 0.75);
 }
 
 /*
@@ -140,6 +156,10 @@ section {
     height: 440px;
 }
 
+.left-top:before {
+    width: 255px;
+}
+
 .left-bottom:before,
 .right-bottom:before {
     content: "";
@@ -169,6 +189,10 @@ footer {
     align-items: center;
     height: 50px;
     transition: all 0.8s ease;
+    -webkit-transition: all 0.8s ease;
+    -moz-transition: all 0.8s ease;
+    -ms-transition: all 0.8s ease;
+    -o-transition: all 0.8s ease;
 }
 
 footer > span {
@@ -177,7 +201,10 @@ footer > span {
     display: inline-block;
     text-align: right;
     transition: all 3s ease-out;
-    /* transition: all 5s ease-out; */
+    -webkit-transition: all 3s ease-out;
+    -moz-transition: all 3s ease-out;
+    -ms-transition: all 3s ease-out;
+    -o-transition: all 3s ease-out;
 }
 
 footer:hover span {
@@ -228,6 +255,10 @@ footer:hover span::before {
 @media screen and (max-width: 600px) {
     figure img {
         width: 100%;
+    }
+
+    h1 {
+        font-size: 1.8em;
     }
 }
 @media screen and (max-width: 400px) {
